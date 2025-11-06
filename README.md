@@ -7,3 +7,7 @@
 Nothing here for now..
 
 ## Initial Commit
+
+### DEVELOPERS ###
+
+Ethan Lowrey, and Bryson Lee
