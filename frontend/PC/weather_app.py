@@ -12,7 +12,7 @@ def get_weather():
         icon_label.clear()
         return
 
-    api_key = "YOUR_API_KEY"  # Replace with your OpenWeatherMap API key
+    api_key = "YOUR_API_KEY"  # Replace with your OpenWeatherMap API key (this is fine for now)
     url = f"http://api.openweathermap.org/data/2.5/weather?q={city}&appid={api_key}&units=metric"
 
     try:
