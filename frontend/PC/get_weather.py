@@ -1,8 +1,5 @@
 import sys
 import requests
-from PyQt5.QtWidgets import QApplication, QWidget, QVBoxLayout, QComboBox, QPushButton, QLabel
-from PyQt5.QtGui import QPixmap
-from PyQt5.QtCore import Qt
 
 # ---------- List of NM cities ----------
 new_mexico_cities = [
@@ -19,7 +16,7 @@ def get_weather():
         icon_label.clear()
         return
 
-    api_key = "YOUR_API_KEY"  # Replace with your OpenWeatherMap API key
+    api_key = "YOUR_API_KEY"  # Replace with your OpenWeatherMap API key (this is fine for now)
     url = f"http://api.openweathermap.org/data/2.5/weather?q={city}&appid={api_key}&units=metric"
 
     try:
@@ -48,27 +45,3 @@ def get_weather():
     except Exception as e:
         result_label.setText("Error fetching weather.")
         icon_label.clear()
-
-# ---------- PyQt5 UI ----------
-app = QApplication(sys.argv)
-
-window = QWidget()
-window.setWindowTitle("NM Weather App")
-window.resize(400, 300)
-
-layout = QVBoxLayout()
-
-# Dropdown for NM cities
-city_dropdown = QComboBox()
-city_dropdown.addItems(new_mexico_cities)
-layout.addWidget(city_dropdown)
-
-# Button
-get_button = QPushButton("Get Weather")
-get_button.clicked.connect(get_weather)
-layout.addWidget(get_button)
-
-# Result label
-result_label = QLabel("")
-result_label.setAlignment(Qt.AlignCenter)
-layout.addWidget(result_label)
