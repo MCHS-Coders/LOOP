@@ -1,4 +1,4 @@
-# Welcome to LAMPREY! (LOOP)
+# Welcome to LAMPREY's software stack repo! (LOOP)
 [![Documentation](https://img.shields.io/badge/wiki-docs-blue)](https://github.com/MCHS-Coders/LOOP/wiki)
 [![Issues](https://img.shields.io/badge/issues-tracker-red)](https://github.com/MCHS-Coders/LOOP/issues)
 [![Q&A](https://img.shields.io/badge/Q%26A-discussions-green)](https://github.com/MCHS-Coders/LAMPREY/discussions/3)
