@@ -30,6 +30,7 @@ One promising candidate is a **ceramic patch antenna**, or formally known as a *
 The **Cross-Platform** application will be critical to implement. It will ideally be portable to windows, linux, ios, and android devices.
 This application will include **safety awareness** videos, of which have been recorded by AISES teammates, and will be accessible directly from the application offline.
 The application will **communicate with the mesh network**, through **Wi-Fi** and **Bluetooth-LE (BLE)**, and utilize the newfound data from these nodes to forecast.
+In an emergency, this application may be used to send crucial information of the user's whereabouts, condition, and needs, to first responders and emergency services.
 
 ## Safety and Testing
 While testing is *non-existent* at this *early stage* of development, safety-focused designs have been **well-thought out**.
