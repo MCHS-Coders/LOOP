@@ -73,12 +73,11 @@ class WeatherUI(QWidget):
         self.timer.start(self.POLL_MS)
 
     def _refresh(self):
-        node = self.client.find_weather_station()
-
-        # Only update UI when something changes
+        node = self.client.get_weather_station()
         if node != self.current_node:
             self.current_node = node
             self._update_status(node)
+
 
     def _update_status(self, node):
         if node:
